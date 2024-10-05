@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
-    public static ScoreManager instance;
+    public static UiManager instance;
 
     public TMP_Text timeText;
     public TMP_Text algaeText;
