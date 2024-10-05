@@ -1,67 +1,58 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : GameSingleton<AudioManager>
 {
-    public static AudioManager instance;
+    [SerializeField] private GameObject _audioObjectPrefab;
 
-    [System.Serializable]
-    public class Sound
+    private readonly IDictionary<string, AudioClip> _audioClipDictionary = new Dictionary<string, AudioClip>();
+
+    protected override void InitSingletonInstance()
     {
-        public string name;
-        public AudioClip clip;
-        [Range(0f, 1f)] public float volume;
-        public bool loop;
-
-        [HideInInspector] public AudioSource source;
-    }
-
-    public List<Sound> sounds;
-
-    void Awake()
-    {
-        if (instance == null)
+        var audioClips = Resources.LoadAll<AudioClip>("Audio");
+        if (audioClips?.Any() ?? false)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // Make sure the audio manager persists between scenes
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-        foreach (Sound sound in sounds)
-        {
-            sound.source = gameObject.AddComponent<AudioSource>();
-            sound.source.clip = sound.clip;
-            sound.source.volume = sound.volume;
-            sound.source.loop = sound.loop;
+            foreach (var audioClip in audioClips)
+            {
+                if (!_audioClipDictionary.TryGetValue(audioClip.name, out _))
+                {
+                    _audioClipDictionary.Add(audioClip.name.ToLower(), audioClip);
+                }
+            }
         }
     }
 
-    void Start()
+    public void Awake()
     {
-        Play("BackgroundMusic"); // Example to play background music
+        Play(SoundName.BackgroundMusic.ToString(), true);
     }
 
-    public void Play(string name)
-    {
-        Sound sound = sounds.Find(s => s.name == name);
-        if (sound == null)
-        {
-            return;
-        }
-        sound.source.Play();
-    }
+    public void Play(SoundName soundName) => Play(soundName.ToString());
 
-    public void Stop(string name)
+    public void Play(string clipName, bool loop = false)
     {
-        Sound sound = sounds.Find(s => s.name == name);
-        if (sound == null)
+        if (_audioClipDictionary.TryGetValue(clipName.ToLower(), out var clip))
         {
-            return;
+            var spawnedObj = Instantiate(_audioObjectPrefab);
+            spawnedObj.name = $"Audio Object ({clipName})";
+            var audioSource = spawnedObj.GetComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.loop = loop;
+            if (loop)
+            {
+                Destroy(spawnedObj.GetComponent<DestroyAfterTime>());
+            }
+            try
+            {
+                audioSource.volume = 1;//SettingsManager.Instance.Settings.SfxVolume;
+            }
+            catch
+            {
+                // do nothing
+            }
+            audioSource.Play();
         }
-        sound.source.Stop();
     }
 }

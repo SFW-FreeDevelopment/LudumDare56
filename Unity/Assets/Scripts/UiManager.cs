@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UiManager : MonoBehaviour
+public class UiManager : GameSingleton<UiManager>
 {
     public static UiManager instance;
 
@@ -13,23 +13,12 @@ public class UiManager : MonoBehaviour
     private int algaeRemaining = 0;
     private int coinCount = 0;
 
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     void Start()
     {
         UpdateUI();
         InvokeRepeating("UpdateTime", 0f, 1f);
+        SetAlgaeRemaining();
     }
 
     void UpdateTime()
@@ -45,9 +34,14 @@ public class UiManager : MonoBehaviour
         }
     }
 
-    public void AlgaeRemaining(int amount)
+    private void SetAlgaeRemaining()
     {
-        algaeRemaining -= amount;
+        algaeRemaining = GameManager.instance.GetAlgaeCount();
+    }
+    
+    public void AlgaeCollected()
+    {
+        algaeRemaining--;
         UpdateUI();
     }
 
@@ -62,5 +56,10 @@ public class UiManager : MonoBehaviour
         timeText.text = "Time: " + timeRemaining.ToString();
         algaeText.text = "Score: " + algaeRemaining.ToString();
         coinCountText.text = "Coins: " + coinCount.ToString();
+    }
+
+    protected override void InitSingletonInstance()
+    {
+        //throw new System.NotImplementedException();
     }
 }

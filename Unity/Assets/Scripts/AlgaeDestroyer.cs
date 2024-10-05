@@ -10,6 +10,7 @@ public class AlgaeDestroyer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject); // Destroy the algae object
+            
         }
     }
 }
