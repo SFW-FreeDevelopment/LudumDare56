@@ -17,6 +17,7 @@ public class UiManager : GameSingleton<UiManager>
     void OnEnable()
     {
         EventManager.OnAlgaeCollected += AlgaeCollected;
+        EventManager.OnCoinCollected += CollectCoin;
     }
 
     void OnDisable()
@@ -57,7 +58,7 @@ public class UiManager : GameSingleton<UiManager>
     private void UpdateUI()
     {
         timeText.text = "Time: " + timeRemaining.ToString();
-        algaeText.text = "Score: " + algaeRemaining.ToString();
+        algaeText.text = "Algae: " + algaeRemaining.ToString();
         coinCountText.text = "Coins: " + coinCount.ToString();
     }
 
