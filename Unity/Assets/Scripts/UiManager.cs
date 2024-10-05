@@ -21,6 +21,16 @@ public class UiManager : GameSingleton<UiManager>
         SetAlgaeRemaining();
     }
 
+    void OnEnable()
+    {
+        EventManager.OnAlgaeCollected += AlgaeCollected;
+    }
+
+    void OnDisable()
+    {
+        EventManager.OnAlgaeCollected -= AlgaeCollected;
+    }
+
     void UpdateTime()
     {
         if (timeRemaining > 0)
