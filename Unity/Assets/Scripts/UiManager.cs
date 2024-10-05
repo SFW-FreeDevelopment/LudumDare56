@@ -14,13 +14,6 @@ public class UiManager : GameSingleton<UiManager>
     private int coinCount = 0;
 
 
-    void Start()
-    {
-        UpdateUI();
-        InvokeRepeating("UpdateTime", 0f, 1f);
-        SetAlgaeRemaining();
-    }
-
     void OnEnable()
     {
         EventManager.OnAlgaeCollected += AlgaeCollected;
@@ -46,7 +39,7 @@ public class UiManager : GameSingleton<UiManager>
 
     private void SetAlgaeRemaining()
     {
-        algaeRemaining = GameManager.instance.GetAlgaeCount();
+        algaeRemaining = GameManager.Instance.GetAlgaeCount();
     }
     
     public void AlgaeCollected()
@@ -70,6 +63,8 @@ public class UiManager : GameSingleton<UiManager>
 
     protected override void InitSingletonInstance()
     {
-        //throw new System.NotImplementedException();
+        SetAlgaeRemaining();
+        UpdateUI();
+        InvokeRepeating("UpdateTime", 0f, 1f);
     }
 }
