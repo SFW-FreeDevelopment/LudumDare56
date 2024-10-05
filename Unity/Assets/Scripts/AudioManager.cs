@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
         Sound sound = sounds.Find(s => s.name == name);
         if (sound == null)
         {
-            //return;
+            return;
         }
         sound.source.Stop();
     }
