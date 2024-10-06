@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using Newtonsoft.Json.Linq;
+using System.Drawing;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,11 +26,22 @@ public class PlayerController : MonoBehaviour
     private bool isAnimating = false; // Check if animation coroutine is running
     private bool isFacingRight = true; // Track the shrimp's facing direction
 
+    private void OnEnable()
+    {
+        EventManager.OnColorChange += SetShrimpColor;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnColorChange -= SetShrimpColor;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        SetShrimpColor();
         rb.gravityScale = gravityScale;
         spriteRenderer.sprite = idleSprite; // Start with the idle sprite
     }
@@ -135,5 +148,41 @@ public class PlayerController : MonoBehaviour
         Vector3 childScale = childSpriteTransform.localScale;
         childScale.x *= -1; // Flip the child sprite's X scale too
         childSpriteTransform.localScale = childScale;
+    }
+
+    private void SetShrimpColor()
+    {
+        var hexValue = "";
+        switch (SettingsManager.Instance.Settings.ShrimpColor)
+        {
+            case ShrimpColor.Pink:
+                hexValue = "#FA7575";
+                break;
+            case ShrimpColor.Red:
+                hexValue = "#FF3D3D"; // Neon Red
+                break;
+            case ShrimpColor.Blue:
+                hexValue = "#3D9EFF"; // Neon Blue
+                break;
+            case ShrimpColor.Green:
+                hexValue = "#3DFF8C"; // Neon Green
+                break;
+            case ShrimpColor.Yellow:
+                hexValue = "#FFFF3D"; // Neon Yellow
+                break;
+            default:
+                hexValue = "#FFFFFF"; // Fallback color (White)
+                break;
+        }
+
+        SetColorFromHex(hexValue);
+    }
+    private void SetColorFromHex(string hex)
+    {
+        UnityEngine.Color color;
+        if (ColorUtility.TryParseHtmlString(hex, out color))
+        {
+            spriteRenderer.color = color;
+        }
     }
 }
