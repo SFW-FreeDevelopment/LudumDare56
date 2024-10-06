@@ -27,31 +27,20 @@ public class SettingsOnClick : MonoBehaviour
     public void ColorChanged()
     {
         var color = dropdown.value;
-        var value = ShrimpColor.Pink;
 
-        switch (color)
+        var value = color switch
         {
-            case 0:
-                value = ShrimpColor.Pink;
-                break;
-            case 1:
-                value = ShrimpColor.Purple;
-                break;
-            case 2:
-                value = ShrimpColor.Yellow;
-                break;
-            case 3:
-                value = ShrimpColor.Green;
-                break;
-            case 4:
-                value = ShrimpColor.Magenta;
-                break;
-            case 5:
-                value = ShrimpColor.Blue;
-                break;
-        }
+            0 => ShrimpColor.Pink,
+            1 => ShrimpColor.Purple,
+            2 => ShrimpColor.Yellow,
+            3 => ShrimpColor.Green,
+            4 => ShrimpColor.Magenta,
+            5 => ShrimpColor.Blue,
+            _ => ShrimpColor.Pink
+        };
 
         SettingsManager.Instance.Settings.ShrimpColor = value;
+        SettingsManager.Instance.Save();
         EventManager.ColorChange();
     }
 }
