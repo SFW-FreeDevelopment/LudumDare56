@@ -68,7 +68,7 @@ public class GameManager : GameSingleton<GameManager>
     {
         if (gameState.AlgaeCollectedInLevel == algaeCount)
         {
-            EventManager.LevelCompleted();
+            //EventManager.LevelCompleted();
             ResetCollectionCounts();
             GoToNextLevel();
         }

@@ -12,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClickSettings()
     {
-        // TODO: Open Settings window
+        SceneManager.LoadScene("Settings");
     }
 
     public void OnClickCredits()
