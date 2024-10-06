@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 
 public class SettingsManager : GameSingleton<SettingsManager>

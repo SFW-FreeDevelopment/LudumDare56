@@ -14,6 +14,7 @@ public class GameState
     public int CoinsCollectedTotal { get; set;}
     //public ShrimpColor ShrimpColor { get; set; }
     public DateTime StartTime { get; set; }
+    public float Volume { get; set; }
 
     public GameState()
     {
