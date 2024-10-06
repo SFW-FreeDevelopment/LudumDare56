@@ -66,7 +66,7 @@ public class GameManager : GameSingleton<GameManager>
 
     private void CheckLevelCompletion()
     {
-        if (gameState.AlgaeCollectedInLevel >= 3)
+        if (gameState.AlgaeCollectedInLevel == algaeCount)
         {
             ResetCollectionCounts();
             GoToNextLevel();
