@@ -60,7 +60,7 @@ public class UiManager : SceneSingleton<UiManager>
     {
         timeText.text = "Time: " + timeRemaining.ToString();
         algaeText.text = "Algae: " + algaeRemaining.ToString();
-        coinCountText.text = "Coins: " + coinCount.ToString();
+        coinCountText.text = "Coins: " + GameManager.Instance.GetCoinCount().ToString();
     }
 
     protected override void InitSingletonInstance()

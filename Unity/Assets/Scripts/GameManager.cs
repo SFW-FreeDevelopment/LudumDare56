@@ -32,6 +32,11 @@ public class GameManager : GameSingleton<GameManager>
         return algaeCount;
     }
 
+    public int GetCoinCount()
+    {
+        return gameState.CoinsCollectedTotal;
+    }
+
     private void Start()
     {
         CountAlgae();
@@ -50,6 +55,11 @@ public class GameManager : GameSingleton<GameManager>
         gameState.CoinsCollectedInLevel++;
     }
 
+    public int GetTotalAlgae()
+    {
+       return gameState.AlgaeCollectedTotal;
+    }
+
     private void ResetCollectionCounts()
     {
         gameState.CoinsCollectedInLevel = 0;
@@ -58,9 +68,19 @@ public class GameManager : GameSingleton<GameManager>
 
     private void GoToNextLevel()
     {
+        ResetCollectionCounts();
         gameState.CurrentLevel++;
         var level = gameState.CurrentLevel;
-        var scene = ConvertLevelEnumToString(level);
+        var scene = "";
+        if (level == 6 && gameState.CoinsCollectedTotal >= 10)
+        {
+            scene = "Crab Level";
+        }
+        else
+        {
+            scene = ConvertLevelEnumToString(level);
+        }
+
         SceneManager.LoadScene(scene);
     }
 
@@ -68,9 +88,7 @@ public class GameManager : GameSingleton<GameManager>
     {
         if (gameState.AlgaeCollectedInLevel == algaeCount)
         {
-            //EventManager.LevelCompleted();
-            ResetCollectionCounts();
-            GoToNextLevel();
+            EventManager.LevelCompletion();
         }
     }
 
