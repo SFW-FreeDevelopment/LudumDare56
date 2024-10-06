@@ -9462,6 +9462,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank
       objectReference: {fileID: 0}
+    - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.306752
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5408508
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.69182384
+      objectReference: {fileID: 0}
     - target: {fileID: 9137889178125719483, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Color.b
       value: 0.67683476
