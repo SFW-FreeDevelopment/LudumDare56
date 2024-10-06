@@ -75,7 +75,6 @@ public class GameManager : GameSingleton<GameManager>
 
     protected override void InitSingletonInstance()
     {
-        gameState = new GameState();
     }
 
     private string ConvertLevelEnumToString(int level)
