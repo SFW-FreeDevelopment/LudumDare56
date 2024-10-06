@@ -16,7 +16,7 @@ public class SettingsOnClick : MonoBehaviour
 
     public void VolumeAdjusted()
     {
-        SettingsManager.Instance.volume = Slider.value;
+        SettingsManager.Instance.Settings.MusicVolume = Slider.value;
         EventManager.VolumeAdjusted();
     }
 }

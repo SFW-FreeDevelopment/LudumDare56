@@ -7,6 +7,11 @@ public class MusicVolume : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    public void Start()
+    {
+        audioSource.volume = SettingsManager.Instance.Settings.MusicVolume;
+    }
+
     void OnEnable()
     {
         EventManager.OnVolumeAdjusted += AdjustVolume;
@@ -19,6 +24,6 @@ public class MusicVolume : MonoBehaviour
 
     private void AdjustVolume()
     {
-        audioSource.volume = SettingsManager.Instance.volume;  
+        audioSource.volume = SettingsManager.Instance.Settings.MusicVolume;  
     }
 }

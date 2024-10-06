@@ -11,8 +11,6 @@ using UnityEngine.UI;
 public class SettingsManager : GameSingleton<SettingsManager>
 {
     public Settings Settings { get; private set; } = new();
-    public float volume { get; set; }
-
 
     protected override void InitSingletonInstance()
     {
