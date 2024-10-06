@@ -18,6 +18,7 @@ public class UiManager : GameSingleton<UiManager>
     {
         EventManager.OnAlgaeCollected += AlgaeCollected;
         EventManager.OnCoinCollected += CollectCoin;
+        EventManager.OnLevelCompleted += LevelCompleted;
     }
 
     void OnDisable()
@@ -37,6 +38,12 @@ public class UiManager : GameSingleton<UiManager>
         {
             // Game Over Logic
         }
+    }
+
+    private void LevelCompleted()
+    {
+        SetAlgaeRemaining();
+        timeRemaining = 120f;
     }
 
     private void SetAlgaeRemaining()
