@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using UnityEngine.Audio;
+using System.Collections.ObjectModel;
 
 public class AudioManager : GameSingleton<AudioManager>
 {
@@ -46,7 +48,14 @@ public class AudioManager : GameSingleton<AudioManager>
             }
             try
             {
-                audioSource.volume = 1;//SettingsManager.Instance.Settings.SfxVolume;
+                if (clipName == SoundName.BackgroundMusic.ToString())
+                {
+                    audioSource.volume = SettingsManager.Instance.Settings.MusicVolume;
+                }
+                else
+                {
+                    audioSource.volume = SettingsManager.Instance.Settings.SfxVolume;
+                }
             }
             catch
             {

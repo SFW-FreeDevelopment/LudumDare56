@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UiManager : GameSingleton<UiManager>
+public class UiManager : SceneSingleton<UiManager>
 {
     public static UiManager instance;
 
@@ -23,6 +23,7 @@ public class UiManager : GameSingleton<UiManager>
     void OnDisable()
     {
         EventManager.OnAlgaeCollected -= AlgaeCollected;
+        EventManager.OnCoinCollected -= CollectCoin;
     }
 
     void UpdateTime()
