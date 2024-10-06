@@ -5,8 +5,9 @@ using UnityEngine;
 public enum ShrimpColor
 {
     Pink,
-    Blue,
-    Red,
+    Purple,
+    Yellow,
     Green,
-    Yellow
+    Magenta,
+    Blue
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using System.Collections.ObjectModel;
+using UnityEngine.UI;
 
 
 public class SettingsManager : GameSingleton<SettingsManager>
@@ -15,17 +17,6 @@ public class SettingsManager : GameSingleton<SettingsManager>
         Load();
     }
 
-    public void Back()
-    {
-        Save();
-        SceneManager.LoadScene("Main Menu");
-    }
-
-    public void AdjustVolume(float value)
-    {
-        Settings.MusicVolume = value;
-    }
-    
     public void Save()
     {
         var json = JsonConvert.SerializeObject(Settings);
