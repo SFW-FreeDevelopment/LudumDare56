@@ -717,7 +717,7 @@ SpriteRenderer:
   m_Size: {x: 31, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &50376408
@@ -1862,7 +1862,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &283261152
@@ -4247,7 +4247,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &604913138
@@ -6683,7 +6683,7 @@ SpriteRenderer:
   m_Size: {x: 31, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1047110917
@@ -8556,7 +8556,7 @@ SpriteRenderer:
   m_Size: {x: 31, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1404090755
@@ -10268,7 +10268,7 @@ SpriteRenderer:
   m_Size: {x: 29, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1660432261
@@ -11504,13 +11504,15 @@ MonoBehaviour:
     m_Options:
     - m_Text: Pink
       m_Image: {fileID: 0}
-    - m_Text: Blue
+    - m_Text: Purple
       m_Image: {fileID: 0}
-    - m_Text: Red
+    - m_Text: Yellow
       m_Image: {fileID: 0}
     - m_Text: Green
       m_Image: {fileID: 0}
-    - m_Text: Yellow
+    - m_Text: Magenta
+      m_Image: {fileID: 0}
+    - m_Text: Blue
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

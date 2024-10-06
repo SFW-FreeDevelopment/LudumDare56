@@ -35,16 +35,19 @@ public class SettingsOnClick : MonoBehaviour
                 value = ShrimpColor.Pink;
                 break;
             case 1:
-                value = ShrimpColor.Blue;
+                value = ShrimpColor.Purple;
                 break;
             case 2:
-                value = ShrimpColor.Red;
+                value = ShrimpColor.Yellow;
                 break;
             case 3:
                 value = ShrimpColor.Green;
                 break;
             case 4:
-                value = ShrimpColor.Yellow;
+                value = ShrimpColor.Magenta;
+                break;
+            case 5:
+                value = ShrimpColor.Blue;
                 break;
         }
 

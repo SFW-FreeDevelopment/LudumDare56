@@ -158,20 +158,23 @@ public class PlayerController : MonoBehaviour
             case ShrimpColor.Pink:
                 hexValue = "#FA7575";
                 break;
-            case ShrimpColor.Red:
-                hexValue = "#FF3D3D"; // Neon Red
-                break;
-            case ShrimpColor.Blue:
-                hexValue = "#3D9EFF"; // Neon Blue
-                break;
-            case ShrimpColor.Green:
-                hexValue = "#3DFF8C"; // Neon Green
+            case ShrimpColor.Purple:
+                hexValue = "#757FFA";
                 break;
             case ShrimpColor.Yellow:
-                hexValue = "#FFFF3D"; // Neon Yellow
+                hexValue = "#FAF375";
+                break;
+            case ShrimpColor.Green:
+                hexValue = "#75FA82";
+                break;
+            case ShrimpColor.Magenta:
+                hexValue = "#DB75FA";
+                break;
+            case ShrimpColor.Blue:
+                hexValue = "#75FAF0";
                 break;
             default:
-                hexValue = "#FFFFFF"; // Fallback color (White)
+                hexValue = "#FA7575"; // Fallback color
                 break;
         }
 
