@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099546391874534334}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -71,14 +71,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.02, y: 2.2}
+    oldSize: {x: 2.525, y: 2.75}
     newSize: {x: 2.2, y: 2.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 2.5, y: 2.2}
   m_EdgeRadius: 0
 --- !u!50 &2583052473853765004
 Rigidbody2D:
@@ -175,3 +175,8 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 20d513cc4eaa01441b4107f0aa2f62ac, type: 3}
   moveSprite: {fileID: 21300000, guid: fc05be5c3cec3cc408e021786497a8a9, type: 3}
   animationSpeed: 0.3
+  rightingSpeed: 2
+  uprightThreshold: 0.1
+  jumpForce: 5
+  stuckThreshold: 1
+  stuckDistanceThreshold: 0.1
