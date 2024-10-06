@@ -23,6 +23,7 @@ public class UiManager : GameSingleton<UiManager>
     void OnDisable()
     {
         EventManager.OnAlgaeCollected -= AlgaeCollected;
+        EventManager.OnCoinCollected -= CollectCoin;
     }
 
     void UpdateTime()
