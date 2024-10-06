@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 public class SettingsManager : GameSingleton<SettingsManager>
 {
-    public GameSettings Settings { get; private set; } = new();
+    public Settings Settings { get; private set; } = new();
 
     protected override void InitSingletonInstance()
     {
@@ -25,16 +25,16 @@ public class SettingsManager : GameSingleton<SettingsManager>
             var json = PlayerPrefs.GetString("Settings");
             try
             {
-                Settings = JsonConvert.DeserializeObject<GameSettings>(json) ?? new GameSettings();
+                Settings = JsonConvert.DeserializeObject<Settings>(json) ?? new Settings();
             }
             catch
             {
-                Settings = new GameSettings();
+                Settings = new Settings();
             }
         }
         else
         {
-            Settings = new GameSettings();
+            Settings = new Settings();
         }
     }
 }

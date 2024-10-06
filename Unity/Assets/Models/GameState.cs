@@ -19,6 +19,7 @@ public class GameState
     {
         SessionId = Guid.NewGuid().ToString();
         UserName = "test";
-        ShrimpColor = GameSettings
+        ShrimpColor = SettingsManager.Instance.Settings.ShrimpColor;
+        StartTime = DateTime.UtcNow;
     }
 }

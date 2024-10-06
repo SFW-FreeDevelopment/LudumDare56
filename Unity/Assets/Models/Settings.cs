@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSettings 
+public class Settings 
 {
     public float MusicVolume { get; set; } = 0.2f;
     public float SfxVolume { get; set; } = 1f;
