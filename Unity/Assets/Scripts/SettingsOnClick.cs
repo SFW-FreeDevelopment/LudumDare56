@@ -11,7 +11,7 @@ public class SettingsOnClick : MonoBehaviour
     public Slider Slider;
     public TMP_Dropdown dropdown;
     // Start is called before the first frame update
-
+    
     public void Back()
     {
         SettingsManager.Instance.Save();
