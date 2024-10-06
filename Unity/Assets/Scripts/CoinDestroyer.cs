@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinDestroyer : MonoBehaviour
@@ -9,8 +7,8 @@ public class CoinDestroyer : MonoBehaviour
         // Check if the object triggering the event is the player (assuming the player has the "Player" tag)
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject); // Destroy the algae object
             EventManager.CoinCollected();
+            Destroy(gameObject); // Destroy the algae object
         }
     }
 }

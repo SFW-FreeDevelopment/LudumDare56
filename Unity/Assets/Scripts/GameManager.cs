@@ -1,5 +1,5 @@
-using System.Diagnostics;
 using UnityEngine;
+
 public class GameManager : GameSingleton<GameManager>
 {
     private int algaeCount;
