@@ -9513,6 +9513,10 @@ PrefabInstance:
       value: Tank
       objectReference: {fileID: 0}
     - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0364418943e99e140be1c2664c1d1986, type: 3}
+    - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Color.b
       value: 0.75422245
       objectReference: {fileID: 0}
