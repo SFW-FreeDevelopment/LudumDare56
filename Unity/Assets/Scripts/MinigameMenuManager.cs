@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MinigameMenuManager : MonoBehaviour
@@ -7,8 +8,20 @@ public class MinigameMenuManager : MonoBehaviour
     public GameObject resultsPanel; // Reference to the results panel
     public GameObject pauseButton; // Reference to the pause button (to show/hide it)
     public string mainMenuSceneName = "MainMenu"; // Hardcoded name of the Main Menu scene
+    public TMP_Text algaeText;
+    public TMP_Text coinCountText;
 
     private bool isPaused = false; // Check if the game is paused
+
+    private void OnEnable()
+    {
+        EventManager.OnLevelCompletion += OpenResultsPanel;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnLevelCompletion -= OpenResultsPanel;
+    }
 
     void Start()
     {
@@ -65,5 +78,11 @@ public class MinigameMenuManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Make sure to resume time before changing the scene
         SceneManager.LoadScene(mainMenuSceneName); // Load the main menu scene
+    }
+
+    private void UpdateUI()
+    {
+        algaeText.text = "Algae: " + GameManager.Instance.GetTotalAlgae().ToString();
+        coinCountText.text = "Coins: " + GameManager.Instance.GetCoinCount().ToString();
     }
 }

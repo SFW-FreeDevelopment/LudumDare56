@@ -8966,6 +8966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5863652363622322943, guid: 939f22d6dc94ec74794bd74d07c39b29, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -260
+      objectReference: {fileID: 0}
     - target: {fileID: 6815882397969744080, guid: 939f22d6dc94ec74794bd74d07c39b29, type: 3}
       propertyPath: m_Name
       value: Minigame Menu Manager
