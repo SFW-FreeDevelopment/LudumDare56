@@ -3,6 +3,8 @@ using UnityEngine;
 public class GameManager : GameSingleton<GameManager>
 {
     private int algaeCount;
+    private GameState gameState;
+
     private void CountAlgae()
     {
         GameObject[] algaeObjects = GameObject.FindGameObjectsWithTag("Algae");
@@ -21,6 +23,6 @@ public class GameManager : GameSingleton<GameManager>
 
     protected override void InitSingletonInstance()
     {
-
+        gameState = new GameState();
     }
 }
