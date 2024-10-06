@@ -9,8 +9,8 @@ public class AlgaeDestroyer : MonoBehaviour
         // Check if the object triggering the event is the player (assuming the player has the "Player" tag)
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject); // Destroy the algae object
             EventManager.AlgaeCollected();
+            Destroy(gameObject); // Destroy the algae object
         }
     }
 }

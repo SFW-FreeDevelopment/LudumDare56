@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class GameSingleton<T> : MonoBehaviour where T : GameSingleton<T>
