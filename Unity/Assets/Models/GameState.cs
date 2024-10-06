@@ -12,10 +12,13 @@ public class GameState
     public int AlgaeCollectedTotal { get; set; }
     public int CoinsCollectedInLevel { get; set; }
     public int CoinsCollectedTotal { get; set;}
+    public ShrimpColor ShrimpColor { get; set; }
+    public DateTime StartTime { get; set; }
 
     public GameState()
     {
         SessionId = Guid.NewGuid().ToString();
         UserName = "test";
+        ShrimpColor = GameSettings
     }
 }
