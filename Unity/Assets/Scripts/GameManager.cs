@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : GameSingleton<GameManager>
 {
     private int algaeCount;
-    private GameState gameState;
+    private GameState gameState = new();
 
     void OnEnable()
     {
