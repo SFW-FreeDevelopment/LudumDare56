@@ -4,28 +4,21 @@ using UnityEngine;
 using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using System.Collections.ObjectModel;
+using UnityEngine.UI;
 
 
 public class SettingsManager : GameSingleton<SettingsManager>
 {
     public Settings Settings { get; private set; } = new();
+    public float volume { get; set; }
+
 
     protected override void InitSingletonInstance()
     {
         Load();
     }
 
-    public void Back()
-    {
-        Save();
-        SceneManager.LoadScene("Main Menu");
-    }
-
-    public void AdjustVolume(float value)
-    {
-        Settings.MusicVolume = value;
-    }
-    
     public void Save()
     {
         var json = JsonConvert.SerializeObject(Settings);
