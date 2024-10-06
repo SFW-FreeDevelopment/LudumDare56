@@ -294,6 +294,90 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53458b6209c7c4f40ae863a4bbf50f3d, type: 3}
+--- !u!1 &74703245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74703246}
+  - component: {fileID: 74703247}
+  m_Layer: 0
+  m_Name: Wallpaper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74703246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74703245}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 945709852}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &74703247
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74703245}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1000
+  m_Sprite: {fileID: 21300000, guid: d4f8288518fb79649af5eb3654520c59, type: 3}
+  m_Color: {r: 0.75686276, g: 0.84705883, b: 0.75686276, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 60, y: 40}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &85149300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -408,6 +492,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53458b6209c7c4f40ae863a4bbf50f3d, type: 3}
+--- !u!1001 &115929702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.4389815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.0864377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!1001 &117811006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1449,6 +1590,63 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &494581079
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.287502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.1344833
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!1001 &538589079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1524,7 +1722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1391968376059382036, guid: 5bd6e181434f9a14180ce7a5dd66144c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.30177665
+      value: -3.3017766
       objectReference: {fileID: 0}
     - target: {fileID: 1391968376059382036, guid: 5bd6e181434f9a14180ce7a5dd66144c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2469,6 +2667,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53458b6209c7c4f40ae863a4bbf50f3d, type: 3}
+--- !u!1001 &816940120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
+--- !u!1001 &824770620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.1819315
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.0864377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!1001 &827880935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3410,6 +3722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 74703246}
   - {fileID: 1196247938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4084,6 +4397,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53458b6209c7c4f40ae863a4bbf50f3d, type: 3}
+--- !u!1001 &1152718097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!4 &1161392934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2673134806554647788, guid: efa04e79a5c96e443b8b573d3ef7117f, type: 3}
@@ -5835,6 +6205,63 @@ Transform:
   - {fileID: 325276043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1547702108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1889815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.0864377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!1001 &1566788857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6462,6 +6889,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53458b6209c7c4f40ae863a4bbf50f3d, type: 3}
+--- !u!1001 &1680568590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 816441453953852938, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_Name
+      value: NPC Shrimp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.4319315
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.0864377
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610426671826904258, guid: e6df783a248951046857eb750512ad8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6df783a248951046857eb750512ad8f, type: 3}
 --- !u!1001 &1739091699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7734,7 +8218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1391968376059382036, guid: 5bd6e181434f9a14180ce7a5dd66144c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17286527
+      value: -3.36
       objectReference: {fileID: 0}
     - target: {fileID: 1391968376059382036, guid: 5bd6e181434f9a14180ce7a5dd66144c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8521,9 +9005,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1130141202111926592, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350735800017299317, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1747019275336721452, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Name
       value: Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188729920956243231, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910860823343021952, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402847726937268699, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402847726937268699, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5219896789431382843, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828725147338955026, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Sprite
@@ -8540,6 +9056,10 @@ PrefabInstance:
     - target: {fileID: 6059055785961506394, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Color.r
       value: 0.69182384
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137889178125719483, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 9137889178125719483, guid: 06141a42b76447c45a505640bf4748fb, type: 3}
       propertyPath: m_Color.b
@@ -8560,6 +9080,13 @@ SceneRoots:
   m_Roots:
   - {fileID: 662093458}
   - {fileID: 5791174845844364572}
+  - {fileID: 816940120}
+  - {fileID: 1547702108}
+  - {fileID: 494581079}
+  - {fileID: 1680568590}
+  - {fileID: 1152718097}
+  - {fileID: 115929702}
+  - {fileID: 824770620}
   - {fileID: 1546886213}
   - {fileID: 979258047}
   - {fileID: 3329436590168257643}

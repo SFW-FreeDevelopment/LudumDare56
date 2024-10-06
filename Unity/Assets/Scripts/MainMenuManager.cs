@@ -1,22 +1,71 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public void OnClickStart()
+    // References to the panels
+    public GameObject mainMenuPanel;
+    public GameObject playPanel;
+    public GameObject settingsPanel;
+    public GameObject creditsPanel;
+
+    // References to level buttons
+    public GameObject level6Button; // Reference to the 6th level button
+
+    void Start()
     {
-        SceneManager.LoadScene("Level 1");
+        // Ensure the main menu is active at the start
+        ShowMainMenu();
+
+        // Hard-code the visibility of the 6th level button to false for now
+        level6Button.SetActive(false); // TODO: Hook up to player progress and save data
     }
 
-    public void OnClickSettings()
+    // Show the main menu panel and hide others
+    public void ShowMainMenu()
     {
-        SceneManager.LoadScene("Settings");
+        mainMenuPanel.SetActive(true);
+        playPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
 
-    public void OnClickCredits()
+    // Show the play panel and hide others
+    public void ShowPlayMenu()
     {
-        // TODO: Open Credits window
+        mainMenuPanel.SetActive(false);
+        playPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+    }
+
+    // Show the settings panel and hide others
+    public void ShowSettingsMenu()
+    {
+        mainMenuPanel.SetActive(false);
+        playPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+        creditsPanel.SetActive(false);
+    }
+
+    // Show the credits panel and hide others
+    public void ShowCreditsMenu()
+    {
+        mainMenuPanel.SetActive(false);
+        playPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        creditsPanel.SetActive(true);
+    }
+
+    // Load the corresponding level based on the button clicked
+    public void LoadLevel(string levelName)
+    {
+        SceneManager.LoadScene(levelName);
+    }
+
+    // Method to return to the main menu from any of the child panels
+    public void GoBackToMainMenu()
+    {
+        ShowMainMenu(); // Simply call ShowMainMenu to go back
     }
 }
