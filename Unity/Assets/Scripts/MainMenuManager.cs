@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void OnClickStart()
     {
-        SceneManager.LoadScene("Minigame");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void OnClickSettings()
