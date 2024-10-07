@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: e18d7a4963abba5449009a9fb1e53955, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,6 +179,8 @@ MonoBehaviour:
   moveSprite: {fileID: 21300000, guid: 5da33fc1de3c4ba4c9b4f3ebe702ef57, type: 3}
   smoothTurnChance: 0.75
   avoidanceDuration: 3
+  stuckCheckTime: 2
+  stuckPositionThreshold: 0.1
 --- !u!70 &8450894658396279501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
