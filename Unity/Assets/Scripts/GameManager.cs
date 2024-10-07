@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -94,6 +95,7 @@ public class GameManager : GameSingleton<GameManager>
 
     protected override void InitSingletonInstance()
     {
+        Load();
     }
 
     private string ConvertLevelEnumToString(int level)
@@ -108,6 +110,32 @@ public class GameManager : GameSingleton<GameManager>
         else
         {
             throw new ArgumentOutOfRangeException(nameof(level), "Invalid level value");
+        }
+    }
+
+    public void Save()
+    {
+        var json = JsonConvert.SerializeObject(gameState);
+        PlayerPrefs.SetString("GameState", json);
+    }
+
+    private void Load()
+    {
+        if (PlayerPrefs.HasKey("GameState"))
+        {
+            var json = PlayerPrefs.GetString("GameState");
+            try
+            {
+                gameState = JsonConvert.DeserializeObject<GameState>(json) ?? new GameState();
+            }
+            catch
+            {
+                gameState = new GameState();
+            }
+        }
+        else
+        {
+            gameState = new GameState();
         }
     }
 

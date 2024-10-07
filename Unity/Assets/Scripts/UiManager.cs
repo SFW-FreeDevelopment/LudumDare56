@@ -35,7 +35,7 @@ public class UiManager : SceneSingleton<UiManager>
         }
         else
         {
-            // Game Over Logic
+            EventManager.LevelCompletion();
         }
     }
 
