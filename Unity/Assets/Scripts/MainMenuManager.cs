@@ -44,6 +44,7 @@ public class MainMenuManager : MonoBehaviour
         playPanel.SetActive(true);
         settingsPanel.SetActive(false);
         creditsPanel.SetActive(false);
+        level6Button.SetActive(GameManager.Instance.GetCoinCount() >= 5);
     }
 
     // Show the settings panel and hide others

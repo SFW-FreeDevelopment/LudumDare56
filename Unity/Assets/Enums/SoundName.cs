@@ -4,5 +4,9 @@ using UnityEngine;
 
 public enum SoundName
 {
-    BackgroundMusic
+    BackgroundMusic,
+    Click1,
+    Click2,
+    Coin,
+    GameOver
 }

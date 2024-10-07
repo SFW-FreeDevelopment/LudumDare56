@@ -44,9 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfabca655352534f9d70929964077d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: BackgroundMusic
-    clip: {fileID: 8300000, guid: 78a96943a8b128845bc1e2a21612e03b, type: 3}
-    volume: 1
-    loop: 1
-    source: {fileID: 0}
+  _audioObjectPrefab: {fileID: 209358008065008986, guid: 6ececc90a1c4522498688bec85ddc241, type: 3}

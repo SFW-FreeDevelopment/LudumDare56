@@ -24,10 +24,6 @@ public class AudioManager : GameSingleton<AudioManager>
                 }
             }
         }
-    }
-
-    public void Awake()
-    {
         Play(SoundName.BackgroundMusic.ToString(), true);
     }
 

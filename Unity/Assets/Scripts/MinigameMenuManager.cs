@@ -53,6 +53,7 @@ public class MinigameMenuManager : MonoBehaviour
     // Opens the pause menu and pauses the game
     public void OpenPauseMenu()
     {
+        GameManager.Instance.Save();
         pausePanel.SetActive(true);
         pauseButton.SetActive(false); // Hide the pause button when the pause menu is open
         Time.timeScale = 0f; // Stop time in the game
@@ -71,6 +72,7 @@ public class MinigameMenuManager : MonoBehaviour
     // Opens the results panel (e.g., when the minigame ends)
     public void OpenResultsPanel()
     {
+        GameManager.Instance.Save();
         resultsPanel.SetActive(true);
         pauseButton.SetActive(false); // Hide pause button when results are shown
         Time.timeScale = 0f; // Pause the game when showing results

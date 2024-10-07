@@ -54,6 +54,7 @@ public class GameManager : GameSingleton<GameManager>
     {
         gameState.CoinsCollectedTotal++;
         gameState.CoinsCollectedInLevel++;
+        AudioManager.Instance.Play(SoundName.Coin);
     }
 
     public int GetTotalAlgae()
@@ -90,6 +91,7 @@ public class GameManager : GameSingleton<GameManager>
         if (gameState.AlgaeCollectedInLevel == algaeCount)
         {
             EventManager.LevelCompletion();
+            AudioManager.Instance.Play(SoundName.GameOver);
         }
     }
 
