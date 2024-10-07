@@ -33,6 +33,8 @@ public class MinigameMenuManager : MonoBehaviour
 
     void Update()
     {
+        UpdateUI();
+
         // Toggle pause menu with the Escape key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -45,6 +47,7 @@ public class MinigameMenuManager : MonoBehaviour
                 OpenPauseMenu();
             }
         }
+
     }
 
     // Opens the pause menu and pauses the game
