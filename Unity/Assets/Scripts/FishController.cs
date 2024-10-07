@@ -8,7 +8,7 @@ public class FishController : MonoBehaviour
     public float animationSpeed = 0.3f; // Speed of frame animation
     public Sprite idleSprite; // Idle sprite (frame 1)
     public Sprite moveSprite; // Move sprite (frame 2)
-    public float smoothTurnChance = 0.75f; // Chance that the fish will smoothly continue in its current direction
+    //public float smoothTurnChance = 0.75f; // Chance that the fish will smoothly continue in its current direction
     public float avoidanceDuration = 3f; // Duration to avoid upward or downward direction after hitting something
     public float stuckCheckTime = 2f; // Time interval to check for being stuck
     public float stuckPositionThreshold = 0.1f; // Threshold to detect if the fish is stuck (within this X range)
