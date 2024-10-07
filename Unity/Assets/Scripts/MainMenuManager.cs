@@ -18,7 +18,14 @@ public class MainMenuManager : MonoBehaviour
         ShowMainMenu();
 
         // Hard-code the visibility of the 6th level button to false for now
-        level6Button.SetActive(GameManager.Instance.GetCoinCount() >= 5);
+        try
+        {
+            level6Button.SetActive(GameManager.Instance.GetCoinCount() >= 5);
+            GameManager.Instance.ResetCollectionCounts();
+        }
+        catch {
+            level6Button.SetActive(false);
+        }
     }
 
     // Show the main menu panel and hide others

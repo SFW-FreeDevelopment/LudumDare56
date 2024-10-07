@@ -61,7 +61,7 @@ public class GameManager : GameSingleton<GameManager>
        return gameState.AlgaeCollectedTotal;
     }
 
-    private void ResetCollectionCounts()
+    public void ResetCollectionCounts()
     {
         gameState.CoinsCollectedInLevel = 0;
         gameState.AlgaeCollectedInLevel = 0;

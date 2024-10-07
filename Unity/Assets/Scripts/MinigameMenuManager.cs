@@ -81,6 +81,7 @@ public class MinigameMenuManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Make sure to resume time before changing the scene
         SceneManager.LoadScene(mainMenuSceneName); // Load the main menu scene
+
     }
 
     private void UpdateUI()
